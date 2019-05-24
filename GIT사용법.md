@@ -44,7 +44,6 @@
        <EB><A7><88><ED><81><AC><C3><AB><EB><AA><A8><EB><91><90> stage<EC><97><90> <EC><98><AC><EB><A6><AC><EA><B8><B0>
    
    commit b1662dc18075183b1450f0ab9bf70e5cb85f428c
-   
    ~~~
 
    - 현재까지 커밋된 이력을 모두 확인할 수 있다.
@@ -57,5 +56,53 @@
 
    - CLI(Command Line Interface) 현재 상태를 알기 위해 반드시 명령어를 통해 확인한다.
    - 커밋할 목록에 담겨 있는지, untracked 인지, 커밋할 내역이 있는지 등등 다양한 정보를 알려준다.
+
+## 원격 저장소 활용하기
+
+1. 원격 저장소(remote repository) 등록하기
+
+   ~~~bash
+   $ git remote add origin _____ 경로_____
+   ~~~
+
+   - 원격 저장소(romote)를 등록(add)한다. origin 이름으로 git hub 경로를.
+
+   - 최초에 한번만 등록하면 된다.
+
+   - 아래의 명령어로 현재 등록된 원격 저장소를 확인할 수 있다.
+
+     ~~~bash
+     $ git remote --v
+     $ git remote --v
+     orgin   https://github.com/KimRanA/m44_python.git (fetch)
+     orgin   https://github.com/KimRanA/m44_python.git (push)
+     origin  https://github.com/KimRanA/m44_python.git (fetch)
+     origin  https://github.com/KimRanA/m44_python.git (push)
+     ~~~
+
+2. 원격 저장소에 올리기(push)
+
+   ~~~bash
+   $ git push origin master
+   ~~~
+
+   - git! 올려줘(push) origin이라는 이름의 원격저장소에 master 로!
+
+3. 원격 저장소로부터 가져오기(pull)
+
+   ~~~bash
+   $ git pull origin master
+   ~~~
+
+   - push는 올리는 거고, pull은 가져오는 것임.
+
+## 원격 저장소 복제(clone)하기
+
+~~~bash
+$ git clone _____경로_____
+~~~
+
+- 다운 받기를 원하는 폴더에서 git bash를 열고(우클릭 git bash) 위의 명령어를 입력한다.
+- 경로는 github 에서 우측에 있는 초록색 버튼을 누르면 나타난다.
 
 ***
