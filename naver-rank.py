@@ -9,6 +9,7 @@ response = requests.get(url).text #리퀘스트를 이용해서 GET요청을 보
 soup = BeautifulSoup(response,'html.parser')
 #soup = bs4.BeautifulSoup(request,'html')도 같음.
 results = soup.find_all('span', class_='ah_k')
+#results = soup.select('.ah_k') #가능
 #우리가 찾으려는 것은 span태그이고 class이름은 'ah_k'이다.
 index = 0
 for result in results :
