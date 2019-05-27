@@ -1,8 +1,8 @@
 # GIT
 ## 기본 명령어
 1. git 저장소 (repository) 초기화
-  	***bash
-  	git init*******
+    	***bash
+    	git init*******
 
   ~~~bash
   $ git init
